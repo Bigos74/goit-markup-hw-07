@@ -354,7 +354,7 @@
     <footer class="footer">
       <div class="footer__container container">
         <div class="contacts">
-           <a href="" class="logo link">Web<span class="logo--footer">Studio</span> </a>
+        <a href="" class="logo link">Web<span class="logo--footer">Studio</span> </a>
           <address class="contacts__address">
             <a
               href="https://goo.gl/maps/JVJxd5rByDX9oCMV6"
@@ -427,65 +427,66 @@
     </footer>
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <button type="button" class="modal-btn-close" data-modal-close>
-          <svg class="modal-btn-close-icon" width="18" height="18">
+        <button type="button" class="modal__btn" data-modal-close>
+          <svg class="modal__icon" width="18" height="18">
             <use href="./images/icons.svg#icon-cross"></use>
           </svg>
         </button>
-        <p class="modal-title">Залиште свої дані, ми вам передзвонимо</p>
-        <form class="modal-form">
-          <div class="input-field">
-            <label for="user-name" class="modal-input-title">Ім'я</label>
-            <div class="input-wrap">
+        <p class="modal__title">Залиште свої дані, ми вам передзвонимо</p>
+        <form class="form">
+          <!-- modal-form -->
+          <div class="form__field">
+            <label for="user-name" class="form__title">Ім'я</label>
+            <div class="form__wrap">
               <input
                 type="text"
-                class="modal-input"
+                class="form__input"
                 name="user-name"
                 placeholder=""
                 required
                 id="user-name"
               />
-              <svg class="input-icon" width="18" height="18">
+              <svg class="form__icon" width="18" height="18">
                 <use href="./images/icons.svg#icon-person"></use>
               </svg>
             </div>
           </div>
-          <div class="input-field">
-            <label for="user-tel" class="modal-input-title">Телефон</label>
-            <div class="input-wrap">
+          <div class="form__field">
+            <label for="user-tel" class="form__title">Телефон</label>
+            <div class="form__wrap">
               <input
                 type="tel"
                 minlength="10"
                 maxlength="13"
-                class="modal-input"
+                class="form__input"
                 name="user-tel"
                 required
                 id="user-tel"
               />
-              <svg class="input-icon" width="18" height="18">
+              <svg class="form__icon" width="18" height="18">
                 <use href="./images/icons.svg#icon-phone"></use>
               </svg>
             </div>
           </div>
-          <div class="input-field">
-            <label for="user-mail" class="modal-input-title">Пошта</label>
-            <div class="input-wrap">
-              <input type="email" class="modal-input" name="user-mail" id="user-mail" />
-              <svg class="input-icon" width="18" height="18">
+          <div class="form__field">
+            <label for="user-mail" class="form__title">Пошта</label>
+            <div class="form__wrap">
+              <input type="email" class="form__input" name="user-mail" id="user-mail" />
+              <svg class="form__icon" width="18" height="18">
                 <use href="./images/icons.svg#icon-email"></use>
               </svg>
             </div>
           </div>
-          <div class="input-field">
-            <label for="user-coment" class="modal-input-title">Коментар</label>
+          <div class="form__field">
+            <label for="user-coment" class="form__title">Коментар</label>
             <textarea
               name="user-coment"
               id="user-coment"
-              class="modal-input-coment"
+              class="form__coment"
               placeholder="Введіть текст"
             ></textarea>
           </div>
-          <div class="input-field">
+          <div class="form__field">
             <input
               type="checkbox"
               id="user-terms"
