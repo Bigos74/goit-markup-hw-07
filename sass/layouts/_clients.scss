@@ -1,19 +1,16 @@
-.clients-title {
-  font-size: 36px;
-  line-height: 1.16;
+.clients__title {
+  @include font(null, 36, 1.16, 0.03);
   text-align: center;
-  letter-spacing: 0.03em;
   color: #212121;
   margin-bottom: 50px;
 }
-.clients-name {
+.clients__name {
   display: flex;
   justify-content: space-between;
 }
-.clients-link {
-  display: flex;
+.clients__link {
+  @extend %align-list;
   justify-content: center;
-  align-items: center;
   width: 170px;
   height: 92px;
   border: 1px solid #afb1b8;
@@ -22,12 +19,12 @@
   &:hover {
     border-color: #2196f3;
   }
-  &:hover .clients-item-icon,
-  &:focus .clients-item-icon {
-    fill: #2196f3;
-  }
 }
-.clients-item-icon {
+.clients__icon {
   fill: #afb1b8;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  .clients__link:hover &,
+  .clients__link:focus & {
+    fill: #2196f3;
+  }
 }

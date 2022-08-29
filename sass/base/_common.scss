@@ -11,3 +11,17 @@ body {
 .centered {
   text-align: center;
 }
+.logo {
+  font-family: 'Raleway', sans-serif;
+  font-style: normal;
+  @include font(700, 26, 1.19, 0.03);
+  color: #2196f3;
+  text-decoration: none;
+
+  &--header {
+    color: #000000;
+  }
+  &--footer {
+    color: #fff;
+  }
+}
